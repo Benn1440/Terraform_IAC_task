@@ -51,7 +51,6 @@ resource "aws_nat_gateway" "kcvpc-ng" {
   depends_on = [aws_internet_gateway.kcvpc-igw]
 }
 
-
 # Creating Private Route Table
 resource "aws_route_table" "kcvpc-privateRT" {
   vpc_id = aws_vpc.KCVPC.id
