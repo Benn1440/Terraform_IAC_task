@@ -1,4 +1,4 @@
-resource "aws_instance" "nginx" {
+resource "aws_instance" "web-server" {
  // ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI ID
   instance_type = "t2.micro"
   availability_zone = "eu-west-1"
@@ -22,3 +22,16 @@ resource "aws_instance" "nginx" {
     Name = "nginx-server"
   }
 }
+
+#########################
+resource "aws_instance" "instance" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  subnet_id     = var.subnet_id
+  security_groups = [var.security_group_id]
+
+  tags = {
+    Name = var.instance_name
+  }
+}
+#####################
