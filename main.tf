@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 5.0"
     }
   }
@@ -23,33 +23,33 @@ module "aws_vpc" {
 
 module "security_groups" {
   source = "./modules/sg"
+  vpc_id = module.aws_vpc.KCVPC.id
 }
 
 module "ec2" {
-  source = "./modules/ec2"
+  source            = "./modules/ec2"
+  ami_id            = "ami-12345678"
+  subnet_id         = module.aws_vpc.public_subnet.id
+  instance_type     = "t2.micro"
+  security_group_id = module.security_groups.public_sg.id
+  instance_name     = "Webserver"
+
 }
 
-
-module "security_groups" {
-  source = "./modules/security_groups"
-  vpc_id = module.vpc.vpc_id
-  your_ip = "your_local_ip/32"  # Replace with your local IP
+module "ec2-instance" {
+  source            = "./modules/ec2"
+  ami_id            = "ami-12345678" # Replace with a valid AMI ID
+  instance_type     = "t2.micro"
+  subnet_id         = module.aws_vpc.private_subnet.id
+  security_group_id = module.security_groups.private_sg.id
+  instance_name     = "Database-Instance"
 }
 
-module "public_instance" {
-  source = "./modules/ec2_instance"
-  ami_id           = "ami-12345678"  # Replace with a valid AMI ID
-  instance_type    = "t2.micro"
-  subnet_id        = module.vpc.public_subnet_id
-  security_group_id = module.security_groups.public_sg_id
-  instance_name    = "PublicInstance"
-}
+# module "security_groups" {
+#   source = "./modules/security_groups"
+#   vpc_id = module.vpc.vpc_id
+#   your_ip = "your_local_ip/32"  # Replace with your local IP
+# }
 
-module "private_instance" {
-  source = "./modules/ec2_instance"
-  ami_id           = "ami-12345678"  # Replace with a valid AMI ID
-  instance_type    = "t2.micro"
-  subnet_id        = module.vpc.private_subnet_id
-  security_group_id = module.security_groups.private_sg_id
-  instance_name    = "PrivateInstance"
-}
+
+
