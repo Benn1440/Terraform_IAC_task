@@ -1,8 +1,8 @@
 variable "vpc_id" {
    type = string
+  #  value = aws_vpc.KCVPC.id
 }
-# variable "your_ip" {
-
-# }
-
+variable "igw_id" {
+  type = string
+}
 

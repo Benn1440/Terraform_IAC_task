@@ -7,7 +7,7 @@ resource "aws_vpc" "KCVPC" {
 resource "aws_subnet" "public-subnet" {
   vpc_id     = aws_vpc.KCVPC.id
   cidr_block = var.public-subnet-cidr
-  availability_zone = ["eu-west-1a"]
+  //availability_zone = ["eu-west-1a"]
   //cidr_block = "10.0.1.0/24"
 
   tags = {
@@ -19,7 +19,7 @@ resource "aws_subnet" "public-subnet" {
 resource "aws_subnet" "private-subnet" {
   vpc_id = aws_vpc.KCVPC.id
   cidr_block = var.private-subnet-cidr
-  availability_zone = [ "eu-west-1b"]
+  //availability_zone = [ "eu-west-1b"]
 }
 
 # Creating Internet Gateway
@@ -68,7 +68,7 @@ resource "aws_route_table" "kcvpc-privateRT" {
 # Creating Public Route Table Association
 resource "aws_route_table_association" "kcvpc-pubicRTA" {
   subnet_id      = aws_subnet.public-subnet.id
-  route_table_id = aws_route_table.kcvpc-pubicRT.id
+  route_table_id = aws_route_table.kcvpc-privateRT.id
 }
 
 # Creating Private Route Table Association

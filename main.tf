@@ -24,6 +24,7 @@ module "aws_vpc" {
 module "security_groups" {
   source = "./modules/sg"
   vpc_id = module.aws_vpc.KCVPC.id
+  igw_id = module.aws_internet_gateway.kcvpc.id
 }
 
 resource "aws_key_pair" "ec2-authentication" {
