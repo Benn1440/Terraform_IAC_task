@@ -1,5 +1,5 @@
 resource "aws_instance" "web-server" {
- // ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI ID
+ ami           =   data.aws_ami.server_ami.id
   //instance_type = "t2.micro"
   //availability_zone = "eu-west-1"
   count = var.instance_count
@@ -26,7 +26,7 @@ resource "aws_instance" "web-server" {
 
 resource "aws_instance" "Database-Instance" {
   count = var.instance_count
- // ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI ID
+  ami           =   data.aws_ami.server_ami.id
   //instance_type = "t2.micro"
   //availability_zone = "eu-west-1"
 

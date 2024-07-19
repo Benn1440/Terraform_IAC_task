@@ -26,6 +26,11 @@ module "security_groups" {
   vpc_id = module.aws_vpc.KCVPC.id
 }
 
+resource "aws_key_pair" "ec2-authentication" {
+  key_name   = "devopskey"
+  public_key = file(" ~/.ssh/devopskey.pub")
+}
+
 module "ec2" {
   source            = "./modules/ec2"
   ami_id            = "ami-12345678"
