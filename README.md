@@ -25,3 +25,10 @@ Terraform uses a provider to interface with the Application Programming Interfac
 https://lucid.app/lucidchart/d1b12868-4942-44dd-a6eb-a2639c3e9bc7/edit?invitationId=inv_c8a5d7bb-0a33-48e1-aa84-17e6eb487a99&page=0_0#
 
 ![image](https://github.com/user-attachments/assets/ec259597-b260-4d06-94ff-6fc241249cc9)
+
+## Terraform Init
+
+Running the terraform init within the working directory, terraform checks the provider's file installs required hashicorp files and then creates Two(2) extra files .terraform.lock.hcl ensures that the selected version is frozen, Which helps to avoid issues in cases of upgrade and a .exe file.
+
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/bdff2452-6e86-4394-84de-39de22f501b8">
+
