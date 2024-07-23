@@ -1,18 +1,24 @@
-variable "ami_id" {
-    type = string
-}
+# variable "ami_id" {
+#     type = string
+# }
 variable "instance_type" {
-    type = string
+    # type = string
 }
 variable "subnet_id" {
-    type = string
+    # type = string
 }
-variable "security_group_id" {
-    type = string
-}
+# variable "security_group_id" {
+#     # type = string
+# }
 variable "instance_name" {
-    type = string
+    # type = string
 }
-variable "instance_count" {
-  default = "2"
+# variable "instance_count" {
+#   default = "2"
+# }
+
+variable "server_ami_id" {
+#   type = string
 }
+
+

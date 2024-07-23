@@ -5,3 +5,11 @@ output "igw_id" {
 output "aws_vpc" {
   value = aws_vpc.KCVPC.id
 }
+
+output "public_subnet" {
+  value = aws_subnet.public-subnet.id
+}
+
+output "private_subnet" {
+  value = aws_subnet.private-subnet.id
+}
