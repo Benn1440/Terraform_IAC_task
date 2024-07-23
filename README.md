@@ -32,3 +32,15 @@ Running the terraform init within the working directory, terraform checks the pr
 
 <img width="582" alt="image" src="https://github.com/user-attachments/assets/bdff2452-6e86-4394-84de-39de22f501b8">
 
+## Terraform plan
+
+
+<img width="1047" alt="Screenshot 2024-07-23 at 23 28 18" src="https://github.com/user-attachments/assets/e36976f4-3dfb-4542-9ffa-cdf615231059">
+
+<img width="816" alt="Screenshot 2024-07-23 at 23 32 35" src="https://github.com/user-attachments/assets/cea2ded0-75a1-4a0e-9842-cf96522db3fa">
+
+<img width="989" alt="Screenshot 2024-07-23 at 23 33 34" src="https://github.com/user-attachments/assets/d85ddf16-3e4f-4d27-87b5-f7efe9a861c1">
+
+<img width="1138" alt="Screenshot 2024-07-23 at 23 34 40" src="https://github.com/user-attachments/assets/a0df794b-19cf-4c09-98c8-db15c9031dee">
+
+
