@@ -50,7 +50,11 @@ This displays, snippets of the resources to be created.
 * terraform plan -out=tfplan -json > tfplan.json
 <img width="1439" alt="image" src="https://github.com/user-attachments/assets/a16b5bf6-68a4-4744-bbd7-b0d80c449c29">
 
+## Terraform apply -auto-approve
+Create the resources and state files.
 
+<img width="728" alt="image" src="https://github.com/user-attachments/assets/1b8b547a-67b0-49bd-aedd-52148981e510">
+<img width="1433" alt="image" src="https://github.com/user-attachments/assets/f263f8a8-8ab8-4022-82cf-13055c293750">
 
 
 
