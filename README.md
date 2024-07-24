@@ -56,6 +56,11 @@ Create the resources and state files.
 <img width="728" alt="image" src="https://github.com/user-attachments/assets/1b8b547a-67b0-49bd-aedd-52148981e510">
 <img width="1433" alt="image" src="https://github.com/user-attachments/assets/f263f8a8-8ab8-4022-82cf-13055c293750">
 
+## Terraform Destroy
+
+<img width="1430" alt="image" src="https://github.com/user-attachments/assets/74bfea43-cf00-4f0a-b9c1-b1755fe8a5a4">
+
+
 
 
 
