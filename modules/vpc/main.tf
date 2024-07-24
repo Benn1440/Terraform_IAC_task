@@ -6,7 +6,7 @@ resource "aws_vpc" "KCVPC" {
 # Creating a public subnet
 resource "aws_subnet" "public-subnet" {
   vpc_id     = aws_vpc.KCVPC.id
-  cidr_block = var.public-subnet-cidr.id
+  cidr_block = var.public-subnet-cidr
   //availability_zone = ["eu-west-1a"]
   //cidr_block = "10.0.1.0/24"
 
@@ -18,7 +18,7 @@ resource "aws_subnet" "public-subnet" {
 # Creating a private subnet
 resource "aws_subnet" "private-subnet" {
   vpc_id = aws_vpc.KCVPC.id
-  cidr_block = var.private-subnet-cidr.id
+  cidr_block = var.private-subnet-cidr
   //availability_zone = [ "eu-west-1b"]
 }
 
@@ -66,7 +66,7 @@ resource "aws_security_group" "public_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = var.public-subnet-cidr.id  # Replace with your local IP
+    cidr_blocks = var.public-subnet-cidr.id
     description = "Allow SSH traffic from a specific IP"
   }
 
@@ -166,7 +166,7 @@ resource "aws_network_acl" "private-acl" {
     protocol   = "tcp"
     rule_no    = 100
     action     = "allow"
-    cidr_block = var.public-subnet-cidr.id
+    cidr_block = var.public-subnet-cidr
     from_port  = 0
     to_port    = 65535
   }
