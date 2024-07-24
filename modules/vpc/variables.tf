@@ -1,21 +1,21 @@
-variable "vpc_cidr" {
-  description = "AWS CIDR block for KCVPC"
-  #type = string
-}
-
-variable "public-subnet-cidr" {
-   description = "CIDR block for the public subnet"
-  # type        = string
-}
-
-# variable "aws_subnet" {
-  # type = string
+# variable "vpc_cidr" {
+#   description = "AWS CIDR block for KCVPC"
+#   #type = string
 # }
 
-variable "private-subnet-cidr" {
-  description = "CIDR block for the private subnet"
-  # type        = string
-}
+# variable "public-subnet-cidr" {
+#    description = "CIDR block for the public subnet"
+#   # type        = string
+# }
+
+# # variable "aws_subnet" {
+#   # type = string
+# # }
+
+# variable "private-subnet-cidr" {
+#   description = "CIDR block for the private subnet"
+#   # type        = string
+# }
 
 # variable "vpc_id" {
 #   description = "The ID of the VPC"
