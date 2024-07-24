@@ -43,7 +43,7 @@ module "aws_vpc" {
 }
 
 module "subnets" {
-  source = "./modules/subnet"
+  source = "./modules/subnets"
   vpc_id = module.aws_vpc.vpc_id
 }
 
@@ -80,13 +80,14 @@ module "network_acl" {
   private_subnet_id = module.subnet.private_subnet_id
 }
 
-module "ec2_instance" {
-  source = "./modules/ec2_instance"
+module "ec2" {
+  source = "./modules/ec2"
   public_subnet_id = module.subnet.public_subnet_id
   private_subnet_id = module.subnet.private_subnet_id
   public_security_group_id = module.security_group.public_security_group_id
   private_security_group_id = module.security_group.private_security_group_id
   key_name = var.key_name
+
 }
 
 
