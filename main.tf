@@ -87,6 +87,7 @@ module "ec2" {
   public_security_group_id = module.security_group.public_security_group_id
   private_security_group_id = module.security_group.private_security_group_id
   key_name = var.key_name
+  instance_type = "t3.micro"
 
 }
 
