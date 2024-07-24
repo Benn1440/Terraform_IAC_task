@@ -86,7 +86,7 @@ module "ec2_instance" {
   private_subnet_id = module.subnet.private_subnet_id
   public_security_group_id = module.security_group.public_security_group_id
   private_security_group_id = module.security_group.private_security_group_id
-  ssh_key_name = var.ssh_key_name
+  key_name = var.key_name
 }
 
 

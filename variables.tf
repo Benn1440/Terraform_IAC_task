@@ -5,14 +5,14 @@
 #   type = string
 # }
 
-variable "ssh_key_name" {
+variable "key_name" {
   description = "The name of the SSH key pair"
   type        = string
-  default     = "id_rsa"
+  default     = "devopskey"
 }
 
-variable "ssh_key_path" {
-  description = "Path to the SSH public key file"
-  type        = string
-  default     = "~/.ssh/id_rsa.pub"
-}
+# variable "key_name_path" {
+#   description = "Path to the SSH public key file"
+#   type        = string
+#   default     = "~/.ssh/devopskey.pub"
+# }
