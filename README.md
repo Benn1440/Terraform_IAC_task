@@ -46,6 +46,11 @@ This displays, snippets of the resources to be created.
 <img width="1303" alt="image" src="https://github.com/user-attachments/assets/95a4c05c-85ce-46b5-b48b-21f64040db4d">
 <img width="1314" alt="image" src="https://github.com/user-attachments/assets/ec490c52-2997-42b0-8d17-e58611381641">
 
+## Output of terraform plan 
+* terraform plan -out=tfplan -json > tfplan.json
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/a16b5bf6-68a4-4744-bbd7-b0d80c449c29">
+
+
 
 
 
