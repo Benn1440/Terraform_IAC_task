@@ -34,13 +34,24 @@ Running the terraform init within the working directory, terraform checks the pr
 
 ## Terraform plan
 
+This displays, snippets of the resources to be created.
 
-<img width="1047" alt="Screenshot 2024-07-23 at 23 28 18" src="https://github.com/user-attachments/assets/e36976f4-3dfb-4542-9ffa-cdf615231059">
+<img width="1032" alt="Screenshot 2024-07-24 at 09 16 16" src="https://github.com/user-attachments/assets/37020d1a-c0fe-4818-8751-6bd38ed03ac2">
+<img width="1005" alt="Screenshot 2024-07-24 at 09 18 04" src="https://github.com/user-attachments/assets/5e76b684-9f2a-4c42-85aa-218cab699412">
 
-<img width="816" alt="Screenshot 2024-07-23 at 23 32 35" src="https://github.com/user-attachments/assets/cea2ded0-75a1-4a0e-9842-cf96522db3fa">
+<img width="1026" alt="Screenshot 2024-07-24 at 09 18 57" src="https://github.com/user-attachments/assets/a9b97f49-5a17-43f5-86d2-81a78c3e5785">
+<img width="1326" alt="image" src="https://github.com/user-attachments/assets/a78f530a-9139-4932-a961-9583fa07cefa">
+<img width="1328" alt="image" src="https://github.com/user-attachments/assets/9e3d5643-5ddf-49ac-80a0-4844a78d5156">
+<img width="1330" alt="image" src="https://github.com/user-attachments/assets/485ef64e-8f01-4610-b64d-41822ff3ad26">
+<img width="1303" alt="image" src="https://github.com/user-attachments/assets/95a4c05c-85ce-46b5-b48b-21f64040db4d">
+<img width="1314" alt="image" src="https://github.com/user-attachments/assets/ec490c52-2997-42b0-8d17-e58611381641">
 
-<img width="989" alt="Screenshot 2024-07-23 at 23 33 34" src="https://github.com/user-attachments/assets/d85ddf16-3e4f-4d27-87b5-f7efe9a861c1">
 
-<img width="1138" alt="Screenshot 2024-07-23 at 23 34 40" src="https://github.com/user-attachments/assets/a0df794b-19cf-4c09-98c8-db15c9031dee">
+
+
+
+
+
+
 
 
