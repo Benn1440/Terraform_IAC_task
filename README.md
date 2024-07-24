@@ -50,7 +50,8 @@ This displays, snippets of the resources to be created.
 * terraform plan -out=tfplan -json > tfplan.json
 <img width="1439" alt="image" src="https://github.com/user-attachments/assets/a16b5bf6-68a4-4744-bbd7-b0d80c449c29">
 
-All created resources as available on AWS dashbord are available in the images folder.
+
+#All created resources on the AWS dashboard are in the images folder.
 
 ## Terraform apply -auto-approve
 Create the resources and state files.
