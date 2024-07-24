@@ -11,11 +11,11 @@ output "vpc_id" {
 }
 
 output "public_subnet_id" {
-  value = module.subnet.public_subnet_id
+  value = module.subnets.public_subnet_id
 }
 
 output "private_subnet_id" {
-  value = module.subnet.private_subnet_id
+  value = module.subnets.private_subnet_id
 }
 
 output "igw_id" {
@@ -43,17 +43,28 @@ output "private_security_group_id" {
 }
 
 output "public_subnet_acl_id" {
+  # value = module.network_acl.public_subnets_acl_id
   value = module.network_acl.public_subnet_acl_id
 }
 
 output "private_subnet_acl_id" {
+  # value = module.network_acl.private_subnets_acl_id
   value = module.network_acl.private_subnet_acl_id
 }
 
-output "public_instance_id" {
-  value = module.ec2_instance.public_instance_id
-}
+# output "Web-server_id" {
+#   # value = module.ec2.web-server_id
+#   value = module.ec2.Webserver_id
+# }
+# output "Database-Instance_id" {
+#   # value = module.ec2.Database-Instance_id
+#   value = module.ec2.Database_id
+# }
+# output "public_instance_id" {
+#   # value = module.ec2.public_instance_id
+# }
 
-output "private_instance_id" {
-  value = module.ec2_instance.private_instance_id
-}
+# output "private_instance_id" {
+#   # value = module.ec2.private_instance_id
+# }
+
