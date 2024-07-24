@@ -9,9 +9,12 @@ resource "aws_instance" "web-server" {
   # ami =       var.server_ami_id
   key_name = aws_key_pair.ec2-authentication.id
   instance_type = "t3.micro"
+  subnet_id = var.public_subnet_id
+  security_groups = var.public_security_group_id
+  associate_public_ip_address = true
   
 
-  user_data = file("userdata1.tpl")
+  user_data = file("../userdata1.tpl")
 
    tags = {
     Name = "Webserver-Instance"
@@ -23,9 +26,12 @@ resource "aws_instance" "Database-Instance" {
   #  ami =       var.server_ami_id
    key_name = aws_key_pair.ec2-authentication.id
    instance_type = "t3.micro"
+   subnet_id = var.private_subnet_id
+   secondary_private_ips = var.public_security_group_id 
   //availability_zone = "eu-west-1"
+   associate_public_ip_address = false
 
-  user_data = file("userdata.tpl")
+  user_data = file("../userdata.tpl")
  
    tags = {
     Name = "Database-Instance"
